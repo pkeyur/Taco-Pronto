@@ -1,0 +1,102 @@
+<items>
+
+    <!-- Size Start -->
+    <item>
+        <name>Medium</name>
+        <price>1.0</price>
+    </item>
+    <item>
+        <name>Large</name>
+        <price>1.1</price>
+    </item>
+    <!-- Size End -->
+
+
+    <!-- Tortilla Start -->
+    <item>
+        <name>Corn</name>
+        <price>2.0</price>
+    </item>
+
+    <item>
+        <name>Flour</name>
+        <price>2.1</price>
+    </item>
+    <!-- Tortilla Start -->
+
+
+    <!-- Fillings Start -->
+    <item>
+        <name>Beef</name>
+        <price>3.0</price>
+    </item>
+
+    <item>
+        <name>Chicken</name>
+        <price>3.1</price>
+    </item>
+
+    <item>
+        <name>White Fish</name>
+        <price>3.2</price>
+    </item>
+
+    <item>
+        <name>Cheese</name>
+        <price>3.3</price>
+    </item>
+
+    <item>
+        <name>Sea Food</name>
+        <price>3.4</price>
+    </item>
+
+    <item>
+        <name>Rice</name>
+        <price>3.5</price>
+    </item>
+
+    <item>
+        <name>Beans</name>
+        <price>3.6</price>
+    </item>
+
+    <item>
+        <name>Pico de Gallo</name>
+        <price>3.7</price>
+    </item>
+
+    <item>
+        <name>Guacamole</name>
+        <price>3.8</price>
+    </item>
+
+    <item>
+        <name>LBT</name>
+        <price>3.9</price>
+    </item>
+    <!-- Fillings end-->
+
+    <!-- Beverage Start-->
+    <item>
+        <name>Soda</name>
+        <price>4.0</price>
+    </item>
+
+    <item>
+        <name>Cerveza</name>
+        <price>4.1</price>
+    </item>
+
+    <item>
+        <name>Margarita</name>
+        <price>4.2</price>
+    </item>
+
+    <item>
+        <name>Tequila</name>
+        <price>4.3</price>
+    </item>
+    <!-- Beverage End-->
+
+</items>

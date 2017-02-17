@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_order3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hw1.android.csulb.edu.hw1.OrderActivity3">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow_forward_white_48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/startOrder3Button"
+        app:backgroundTint="@color/colorPrimary"
+        android:onClick="startOrder4Activity"
+        app:elevation="3dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:text="Fillings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/below_text_vertical_margin"
+            android:id="@+id/fillings_text"
+            android:textColor="@color/primary_text"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fillings_text">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/fillings">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/fillings_col1">
+
+                    <CheckBox
+                        android:text="Beef"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_beef"
+                        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+                    <CheckBox
+                        android:text="Chicken"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_chicken"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="White Fish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_whiteFish"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="Sea Food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_seaFood"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="Cheese"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_Cheese"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/fillings_col2"
+                    android:layout_toRightOf="@+id/fillings_col1"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:text="Rice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_rice"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="Beans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_beans"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="Pico de Gallo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_picoDeGallo"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="Guacamole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_guacamole"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                    <CheckBox
+                        android:text="LBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox_lbt"
+                        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
