@@ -17,5 +17,5 @@ Technologies used: Android Studio, Java, XML
 
 Locations of important files.
 
--> Contact Number on which the message is to be sent is stored in Extras/Constants.java
--> Menu of the items is stored in assets/XML/item_list.xml
+Contact Number on which the message is to be sent is stored in Extras/Constants.java
+Menu of the items is stored in assets/XML/item_list.xml
