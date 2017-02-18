@@ -14,3 +14,8 @@ The Work Flow of this application is as following.
 5. Vendor receives the order in the registered mobile number. Total amount to be paid is also sent via SMS to the vendor along with order details.
 
 Technologies used: Android Studio, Java, XML
+
+Locations of important files.
+
+-> Contact Number on which the message is to be sent is stored in Extras/Constants.java
+-> Menu of the items is stored in assets/XML/item_list.xml
