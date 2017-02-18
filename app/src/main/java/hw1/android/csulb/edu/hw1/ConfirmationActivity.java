@@ -123,7 +123,7 @@ public class ConfirmationActivity extends AppCompatActivity {
         }
 
         msgContent += "---------" + "\n";
-        msgContent += "Total: " + totalAmount;
+        msgContent += "Total: " + String.valueOf(truncAmount(totalAmount));
 
         System.out.println(msgContent);
         SmsManager smsMgr = SmsManager.getDefault();
