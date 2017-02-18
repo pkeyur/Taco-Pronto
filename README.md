@@ -15,7 +15,7 @@ The Work Flow of this application is as following.
 
 Technologies used: Android Studio, Java, XML
 
-Locations of important files.
+Locations of important files:
 
 Contact Number on which the message is to be sent is stored in Extras/Constants.java
 
