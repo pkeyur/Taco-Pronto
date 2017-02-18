@@ -19,14 +19,14 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true">
         <TextView
-            android:text="Choose a Size"
+            android:text="@string/choose_a_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/below_text_vertical_margin"
+            android:layout_marginBottom="@dimen/title_size"
             android:id="@+id/chooseSize_text"
             android:textColor="@color/primary_text"
             android:layout_centerHorizontal="true"
-            android:textSize="30dp"/>
+            android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -44,17 +44,17 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:text="Large"
+                    android:text="@string/large"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/sizeLarge" />
 
                 <RadioButton
-                    android:text="Medium"
+                    android:text="@string/medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/sizeMedium"
-                    android:layout_marginLeft="50dp"/>
+                    android:layout_marginStart="50dp" />
             </RadioGroup>
 
         </LinearLayout>

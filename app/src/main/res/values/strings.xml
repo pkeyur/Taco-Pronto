@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Taco Pronto</string>
+    <string name="business_address">123 Euclid Ave.</string>
+    <string name="business_number">Phone no: 5556</string>
+
+    <!-- Labels for Radio Buttons -->
+    <string name="large">Large</string>
+    <string name="medium">Medium</string>
+
+    <string name="corn">Corn</string>
+    <string name="flour">Flour</string>
+
+    <!-- Labels of checkboxes -->
+    <string name="beef">Beef</string>
+    <string name="chicken">Chicken</string>
+    <string name="white_fish">White Fish</string>
+    <string name="sea_food">Sea Food</string>
+    <string name="cheese">Cheese</string>
+    <string name="rice">Rice</string>
+    <string name="beans">Beans</string>
+    <string name="pico_de_gallo">Pico de Gallo</string>
+    <string name="guacamole">Guacamole</string>
+    <string name="lbt">LBT</string>
+
+    <string name="soda">Soda</string>
+    <string name="margarita">Margarita</string>
+    <string name="cerveza">Cerveza</string>
+    <string name="tequila">Tequila</string>
+
+    <!-- Button Text -->
+    <string name="start_order">Start your Order</string>
+    <string name="place_the_order">Place the Order</string>
+
+    <!-- Activity Labels -->
+    <string name="choose_a_size">Choose a Size</string>
+    <string name="tortilla">Tortilla</string>
+    <string name="fillings">Fillings</string>
+    <string name="beverage">Beverage</string>
+    <string name="summary">Summary</string>
+
+    <!-- Image description for accessibility -->
+    <string name="imageDescription">Taco banner</string>
+
 </resources>

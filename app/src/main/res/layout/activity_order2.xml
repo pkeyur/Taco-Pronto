@@ -33,12 +33,12 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
         <TextView
-            android:text="Tortilla"
+            android:text="@string/tortilla"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tortilla_text"
             android:textColor="@color/primary_text"
-            android:textSize="30dp"
+            android:textSize="@dimen/title_size"
             android:layout_marginBottom="@dimen/below_text_vertical_margin"
             android:layout_centerHorizontal="true" />
         <LinearLayout
@@ -57,18 +57,18 @@
                 android:id="@+id/radiogroup_tortilla">
 
                 <RadioButton
-                    android:text="Corn"
+                    android:text="@string/corn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TorillaCorn"
                     android:checked="true"/>
 
                 <RadioButton
-                    android:text="Flour"
+                    android:text="@string/flour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/TorillaFlour"
-                    android:layout_marginLeft="50dp"/>
+                    android:layout_marginStart="50dp" />
 
             </RadioGroup>
 

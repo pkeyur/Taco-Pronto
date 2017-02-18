@@ -11,17 +11,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hw1.android.csulb.edu.hw1.OrderActivity4">
 
-    <Button
-        android:text="Place the Order"
-        android:layout_width="match_parent"
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow_forward_white_48dp"
         android:layout_alignParentBottom="true"
-        android:id="@+id/placeTheOrderButton"
-        android:background="@color/colorAccent"
-        android:textColor="@color/icons"
-        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/goToConfirmationButton"
+        app:backgroundTint="@color/colorPrimary"
         android:onClick="placeTheOrder"
-        android:elevation="5dp" />
+        app:elevation="3dp" />
+
+    <!--<Button-->
+    <!--android:text="@string/place_the_order"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:id="@+id/placeTheOrderButton"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:textColor="@color/icons"-->
+    <!--android:textStyle="bold"-->
+    <!--android:onClick="placeTheOrder"-->
+    <!--android:elevation="5dp" />-->
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -30,13 +46,13 @@
         android:id="@+id/beverage_relativeLayout">
 
         <TextView
-            android:text="Beverage"
+            android:text="@string/beverage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/below_text_vertical_margin"
             android:id="@+id/beverage_text"
             android:textColor="@color/primary_text"
-            android:textSize="30dp"
+            android:textSize="@dimen/title_size"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"/>
 
@@ -50,8 +66,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/beverages"
-                android:layout_below="@+id/beverage_text"
-                android:layout_centerHorizontal="true"
                 android:minHeight="180dp">
 
                 <LinearLayout
@@ -59,18 +73,18 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:id="@+id/beverage_col2"
-                    android:layout_toRightOf="@+id/beverage_col1"
-                    android:layout_marginLeft="50dp">
+                    android:layout_toEndOf="@+id/beverage_col1"
+                    android:layout_marginStart="50dp">
 
                     <CheckBox
-                        android:text="Cerveza"
+                        android:text="@string/cerveza"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_cerveza"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="Tequila"
+                        android:text="@string/tequila"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_tequila"
@@ -87,14 +101,14 @@
                     android:layout_alignParentStart="true">
 
                     <CheckBox
-                        android:text="Soda"
+                        android:text="@string/soda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_soda"
                         android:layout_margin="@dimen/activity_horizontal_margin"/>
 
                     <CheckBox
-                        android:text="Margarita"
+                        android:text="@string/margarita"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_margarita"

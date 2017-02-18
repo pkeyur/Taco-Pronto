@@ -32,13 +32,13 @@
         android:layout_centerInParent="true">
 
         <TextView
-            android:text="Fillings"
+            android:text="@string/fillings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/below_text_vertical_margin"
             android:id="@+id/fillings_text"
             android:textColor="@color/primary_text"
-            android:textSize="30dp"
+            android:textSize="@dimen/title_size"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
@@ -50,7 +50,6 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:id="@+id/fillings">
 
                 <LinearLayout
@@ -60,35 +59,35 @@
                     android:id="@+id/fillings_col1">
 
                     <CheckBox
-                        android:text="Beef"
+                        android:text="@string/beef"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_beef"
                         android:layout_margin="@dimen/activity_horizontal_margin"/>
 
                     <CheckBox
-                        android:text="Chicken"
+                        android:text="@string/chicken"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_chicken"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="White Fish"
+                        android:text="@string/white_fish"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_whiteFish"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="Sea Food"
+                        android:text="@string/sea_food"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_seaFood"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="Cheese"
+                        android:text="@string/cheese"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_Cheese"
@@ -101,39 +100,39 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:id="@+id/fillings_col2"
-                    android:layout_toRightOf="@+id/fillings_col1"
-                    android:layout_marginLeft="10dp">
+                    android:layout_toEndOf="@+id/fillings_col1"
+                    android:layout_marginStart="10dp">
 
                     <CheckBox
-                        android:text="Rice"
+                        android:text="@string/rice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_rice"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="Beans"
+                        android:text="@string/beans"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_beans"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="Pico de Gallo"
+                        android:text="@string/pico_de_gallo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_picoDeGallo"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="Guacamole"
+                        android:text="@string/guacamole"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_guacamole"
                         android:layout_margin="@dimen/activity_horizontal_margin" />
 
                     <CheckBox
-                        android:text="LBT"
+                        android:text="@string/lbt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox_lbt"
@@ -145,8 +144,6 @@
 
         </ScrollView>
 
-
     </RelativeLayout>
-
 
 </RelativeLayout>

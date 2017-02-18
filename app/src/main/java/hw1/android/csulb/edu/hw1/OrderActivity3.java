@@ -1,20 +1,15 @@
 package hw1.android.csulb.edu.hw1;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
-import hw1.android.csulb.edu.hw1.Extras.FunctionProvider;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-import hw1.android.csulb.edu.hw1.Extras.FunctionProvider.*;
+import hw1.android.csulb.edu.hw1.Extras.FunctionProvider;
 
 public class OrderActivity3 extends AppCompatActivity {
 
@@ -22,6 +17,7 @@ public class OrderActivity3 extends AppCompatActivity {
     CheckBox[] fillings = new CheckBox[FILLING_ITEMS];
     LinkedHashSet itemSet;
     RelativeLayout fillings_layout;
+    Item item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +25,7 @@ public class OrderActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_order3);
         itemSet = (LinkedHashSet) getIntent().getSerializableExtra("itemSet");
         fillings_layout = (RelativeLayout) findViewById(R.id.fillings);
+        item = new Item(null, null);
     }
     protected void startOrder4Activity(View view) {
         FunctionProvider.retrieveCheckboxes(fillings_layout, fillings, getApplicationContext());

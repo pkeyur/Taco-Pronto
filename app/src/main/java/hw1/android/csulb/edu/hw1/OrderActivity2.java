@@ -1,14 +1,12 @@
 package hw1.android.csulb.edu.hw1;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class OrderActivity2 extends AppCompatActivity {
@@ -16,6 +14,7 @@ public class OrderActivity2 extends AppCompatActivity {
     RadioButton selectedButton;
     RadioGroup tortillaGroup;
     LinkedHashSet itemSet;
+    Item item;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,13 +22,23 @@ public class OrderActivity2 extends AppCompatActivity {
 
         tortillaGroup = (RadioGroup) findViewById(R.id.radiogroup_tortilla);
         itemSet = (LinkedHashSet) getIntent().getSerializableExtra("itemSet");
+        item = new Item(null, null);
     }
 
     protected void startOrder3Activity(View view){
         selectedButton = (RadioButton) findViewById(tortillaGroup.getCheckedRadioButtonId());
-        itemSet.add(new Item(selectedButton.getText(), null));
+
+        if (itemSet.contains(item)) {
+            itemSet.remove(item);
+        }
+        item.setItem_name(selectedButton.getText());
+        itemSet.add(item);
+        startNextActivity();
+    }
+
+    protected void startNextActivity() {
         Intent intent = new Intent(getApplicationContext(), OrderActivity3.class);
-        intent.putExtra("itemSet",itemSet);
+        intent.putExtra("itemSet", itemSet);
         startActivity(intent);
     }
 }

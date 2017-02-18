@@ -4,4 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="above_text_vertical_margin">150dp</dimen>
     <dimen name="below_text_vertical_margin">30dp</dimen>
+
+    <dimen name="title_size">30sp</dimen>
 </resources>

@@ -32,6 +32,10 @@ public class Item implements Serializable{
         this.item_name = item_name;
     }
 
+    public void setItem_name(CharSequence item_name) {
+        this.item_name = (String) item_name;
+    }
+
     public void setItem_price(Double item_price) {
         if(item_price==null) { item_price = 0.0; }
         this.item_price = item_price;
